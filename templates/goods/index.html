@@ -1,0 +1,66 @@
+{%extends 'base.html'%}
+
+    {#网页内容#}
+    {% block center %}
+    <div class="center_con clearfix">
+		<ul class="subnav fl">
+            {#显示分类信息#}
+            {% for type in types %}
+            <li><a href="/list{{type.id}}/" class="{{type.logo}}">{{type.name}}</a></li>
+            {% endfor %}
+		</ul>
+
+		<div class="slide fl">
+			<ul class="slide_pics">
+                {#显示首页轮播商品#}
+                {% for foo in banner %}
+                <li><a href="/detail{{foo.sku.id}}"><img src="{{foo.image.url}}" alt="幻灯片"></a></li>
+                {% endfor %}
+
+			</ul>
+			<div class="prev"></div>
+			<div class="next"></div>
+			<ul class="points"></ul>
+		</div>
+
+		<div class="adv fl">
+            {#显示活动商品#}
+            {% for foo in promotion %}
+            <a href="{{foo.url}}"><img src="{{foo.image.url}}"></a>
+            {% endfor %}
+		</div>
+	</div>
+    {#显示分类的商品数据#}
+    {% for type in types %}
+    <div class="list_model">
+		<div class="list_title clearfix">
+			<h3 class="fl" id="model01">{{type.name}}</h3>
+			<div class="subtitle fl">
+				<span>|</span>
+                {#以标题显示的数据#}
+                {% for title in type.title_type_info %}
+                <a href="/detail{{title.sku.id}}">{{title.sku.name}}</a>
+                {% endfor %}
+
+			</div>
+			<a href="/list{{type.id}}/" class="goods_more fr" id="fruit_more">查看更多 ></a>
+		</div>
+
+		<div class="goods_con clearfix">
+			<div class="goods_banner fl"><img src="{{type.image.url}}"></div>
+			<ul class="goods_list fl">
+                {#以图片显示的数据#}
+				{% for foo in type.image_type_info  %}
+				                <li>
+					<h4><a href="/detail{{foo.sku.id}}">{{foo.sku.name}}</a></h4>
+					<a href="/detail{{foo.sku.id}}"><img src="{{foo.sku.image.url}}"></a>
+					<div class="prize">¥ {{foo.sku.price}}</div>
+				</li>
+				{% endfor %}
+
+			</ul>
+		</div>
+	</div>
+    {% endfor %}
+    {% endblock center%}
+

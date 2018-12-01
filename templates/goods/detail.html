@@ -1,0 +1,190 @@
+{% extends 'index_list_detail_base.html' %}
+{%block title%}天天生鲜-商品详情{%endblock title%}
+
+
+{#网页内容#}
+{% block center %}
+	<div class="breadcrumb">
+		<a href="#">全部分类</a>
+		<span>></span>
+		<a href="#">{{goods.type}}</a>
+		<span>></span>
+		<a href="#">商品详情</a>
+	</div>
+
+	<div class="goods_detail_con clearfix">
+		<div class="goods_detail_pic fl"><img src="{{goods.image.url}}"></div>
+
+		<div class="goods_detail_list fr">
+			<h3>{{goods.name}}</h3>
+			<p>{{goods.desc}}</p>
+			<div class="prize_bar">
+				<span class="show_pirze">¥<em>{{goods.price}}</em></span>
+				<span class="show_unit">单  位：{{goods.unite}}</span>
+			</div>
+			<div class="goods_num clearfix">
+				<div class="num_name fl">数 量：</div>
+				<div class="num_add fl">
+					<input type="text" class="num_show fl" value="1">
+					<a href="javascript:;" class="add fr">+</a>
+					<a href="javascript:;" class="minus fr">-</a>
+				</div>
+			</div>
+			<div class="total">总价：<em>{{goods.price}}</em></div>
+			<div class="operate_btn">
+				<a href="javascript:;" class="buy_btn">立即购买</a>
+				<input type="submit" class="add_cart" id="add_cart" value="加入购物车">
+				<!--<a href="javascript:;" class="add_cart" id="add_cart"></a>-->
+			</div>
+		</div>
+	</div>
+
+	<div class="main_wrap clearfix">
+		<div class="l_wrap fl clearfix">
+			<div class="new_goods">
+				<h3>新品推荐</h3>
+				<ul>
+					{% for foo in new_goods %}
+					<li>
+						<a href="#"><img src="foo.image.url"></a>
+						<h4><a href="#">{{foo.name}}</a></h4>
+						<div class="prize">￥{{foo.price}}</div>
+					</li>
+					{% endfor %}
+
+
+
+				</ul>
+			</div>
+		</div>
+
+		<div class="r_wrap fr clearfix">
+			<ul class="detail_tab clearfix">
+				<li class="active">商品介绍</li>
+				<li>评论</li>
+
+
+
+			</ul>
+
+			<div class="tab_content">
+				<dl>
+					<dt>商品详情：</dt>
+					<dd>{{goods.goods.detail|safe}}</dd>
+				</dl>
+			</div>
+
+			<div class="tab_content">
+				<dl>
+					<dt>评论详情：</dt>
+					{% for foo in commits %}
+					<dd>{{foo.comment}}</dd>
+					{% endfor %}
+
+				</dl>
+			</div>
+
+		</div>
+	</div>
+
+
+{% endblock center%}
+
+
+
+{#底部JS代码#}
+{% block bottom_js %}
+
+
+	<script type="text/javascript" src="/static/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+
+
+		//计算总价
+		function update_goods_amount() {
+		    //获取数量
+			count =parseInt($('.num_show ').val());
+			//获取单价
+			price =parseFloat($('.show_pirze').children('em').text());
+			//计算总价 保留俩位小数
+			amount = (count*price).toFixed(2);
+
+			//设置显示总价
+
+			$('.total').children('em').text(amount)
+
+        };
+
+
+		$(".add").click(function () {
+			//点击＋的时候，改变商品数量
+			count = parseInt($('.num_show ').val());
+			count+=1;
+			$('.num_show').val(count);
+			update_goods_amount();
+        });
+
+		$(".minus").click(function () {
+			//点击＋的时候，改变商品数量
+			count = parseInt($('.num_show ').val());
+			count-=1;
+			if(count<1){
+			    count=1
+			};
+
+			$('.num_show').val(count);
+			update_goods_amount()
+        });
+
+
+		$('#add_cart').click(function () {
+		    //获取数量
+		    count = parseInt($('.num_show ').val());
+		    $.ajax({
+		        type:'post',
+				url:'/cart/add/',
+				data: {
+                    csrfmiddlewaretoken: '{{ csrf_token }}',
+					sku_id:'{{goods.id}}',
+					num :count,
+                }
+			}).success(function (data) {
+			    if (data.status ==0){
+			        alert(data.msg)
+				}
+				else{
+			        alert(data.msg);
+			        $('#show_count').html(data.cart_num);
+				}
+            });
+
+        });
+
+
+
+
+
+
+
+		var $add_x = $('#add_cart').offset().top;
+		var $add_y = $('#add_cart').offset().left;
+
+		var $to_x = $('#show_count').offset().top;
+		var $to_y = $('#show_count').offset().left;
+
+		$(".add_jump").css({'left':$add_y+80,'top':$add_x+10,'display':'block'});
+//		$('#add_cart').click(function(){
+//			$(".add_jump").stop().animate({
+//				'left': $to_y+7,
+//				'top': $to_x+7},
+//				"fast", function() {
+//					$(".add_jump").fadeOut('fast',function(){
+//						$('#show_count').html(2);
+//					});
+//
+//			});
+//		})
+	</script>
+
+{% endblock bottom_js%}
+

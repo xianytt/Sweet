@@ -1,0 +1,563 @@
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Oct 31 15:42:14 2018] ***
+compiled with version: 5.4.0 20160609 on 30 October 2018 16:49:55
+os: Linux-4.4.0-138-generic #164-Ubuntu SMP Tue Oct 2 17:16:02 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/sxt/Desktop/DEMO1/fresh_store
+writing pidfile to uwsgi.pid
+detected binary path: /home/sxt/.virtualenvs/dj/bin/uwsgi
+chdir() to /home/sxt/Desktop/DEMO1/fresh_store
+your processes number limit is 7764
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 192.168.93.196:7777 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:43167 (port auto-assigned) fd 3
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/sxt/.virtualenvs/dj
+Python main interpreter initialized at 0x2361470
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x2361470 pid: 70664 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 70664)
+spawned uWSGI worker 1 (pid: 70668, cores: 2)
+spawned uWSGI worker 2 (pid: 70669, cores: 2)
+spawned uWSGI worker 3 (pid: 70670, cores: 2)
+spawned uWSGI worker 4 (pid: 70673, cores: 2)
+spawned uWSGI http 1 (pid: 70674)
+[pid: 70673|app: 0|req: 1/1] 192.168.93.47 () {38 vars in 687 bytes} [Wed Oct 31 15:43:56 2018] GET /index => generated 8303 bytes in 1449 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 2/2] 192.168.93.47 () {38 vars in 663 bytes} [Wed Oct 31 15:43:57 2018] GET /static/css/reset.css => generated 94 bytes in 23 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 2/3] 192.168.93.47 () {38 vars in 659 bytes} [Wed Oct 31 15:43:57 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 1957 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 2/4] 192.168.93.47 () {38 vars in 660 bytes} [Wed Oct 31 15:43:57 2018] GET /static/css/main.css => generated 93 bytes in 1958 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70669|app: 0|req: 2/5] 192.168.93.47 () {38 vars in 687 bytes} [Wed Oct 31 15:43:57 2018] GET /static/images/logo.png => generated 96 bytes in 1917 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70669|app: 0|req: 2/6] 192.168.93.47 () {38 vars in 667 bytes} [Wed Oct 31 15:43:57 2018] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 1960 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70668|app: 0|req: 2/7] 192.168.93.47 () {38 vars in 652 bytes} [Wed Oct 31 15:43:58 2018] GET /static/js/slideshow.js => generated 96 bytes in 866 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70668|app: 0|req: 2/8] 192.168.93.47 () {38 vars in 643 bytes} [Wed Oct 31 15:43:57 2018] GET /static/js/slide.js => generated 92 bytes in 1987 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 3/9] 192.168.93.47 () {38 vars in 651 bytes} [Wed Oct 31 15:43:59 2018] GET /static/js/slideshow.js => generated 96 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 3/10] 192.168.93.47 () {38 vars in 665 bytes} [Wed Oct 31 15:44:02 2018] GET /favicon.ico => generated 85 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 4/11] 192.168.93.173 () {36 vars in 625 bytes} [Wed Oct 31 15:44:02 2018] GET / => generated 74 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 5/12] 192.168.93.173 () {36 vars in 609 bytes} [Wed Oct 31 15:44:05 2018] GET /favicon.ico => generated 85 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 6/13] 192.168.93.31 () {36 vars in 640 bytes} [Wed Oct 31 15:44:08 2018] GET /index => generated 8303 bytes in 56 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 7/14] 192.168.93.31 () {36 vars in 616 bytes} [Wed Oct 31 15:44:08 2018] GET /static/css/reset.css => generated 94 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 8/15] 192.168.93.31 () {36 vars in 614 bytes} [Wed Oct 31 15:44:08 2018] GET /static/css/main.css => generated 93 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70669|app: 0|req: 3/16] 192.168.93.31 () {36 vars in 621 bytes} [Wed Oct 31 15:44:08 2018] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 4/17] 192.168.93.31 () {36 vars in 613 bytes} [Wed Oct 31 15:44:08 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 5/18] 192.168.93.31 () {36 vars in 597 bytes} [Wed Oct 31 15:44:08 2018] GET /static/js/slide.js => generated 92 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70668|app: 0|req: 3/19] 192.168.93.31 () {36 vars in 641 bytes} [Wed Oct 31 15:44:08 2018] GET /static/images/logo.png => generated 96 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 9/20] 192.168.93.31 () {36 vars in 605 bytes} [Wed Oct 31 15:44:08 2018] GET /static/js/slideshow.js => generated 96 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 10/21] 192.168.93.173 () {36 vars in 635 bytes} [Wed Oct 31 15:44:09 2018] GET /index => generated 8303 bytes in 99 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 11/22] 192.168.93.173 () {36 vars in 611 bytes} [Wed Oct 31 15:44:09 2018] GET /static/css/reset.css => generated 94 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 6/23] 192.168.93.173 () {36 vars in 609 bytes} [Wed Oct 31 15:44:09 2018] GET /static/css/main.css => generated 93 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70668|app: 0|req: 4/24] 192.168.93.173 () {36 vars in 616 bytes} [Wed Oct 31 15:44:09 2018] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70669|app: 0|req: 4/25] 192.168.93.173 () {36 vars in 608 bytes} [Wed Oct 31 15:44:09 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70668|app: 0|req: 5/26] 192.168.93.173 () {36 vars in 592 bytes} [Wed Oct 31 15:44:10 2018] GET /static/js/slide.js => generated 92 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70669|app: 0|req: 5/27] 192.168.93.173 () {36 vars in 636 bytes} [Wed Oct 31 15:44:10 2018] GET /static/images/logo.png => generated 96 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 7/28] 192.168.93.173 () {36 vars in 600 bytes} [Wed Oct 31 15:44:10 2018] GET /static/js/slideshow.js => generated 96 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 12/29] 192.168.93.31 () {36 vars in 617 bytes} [Wed Oct 31 15:44:10 2018] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 13/30] 192.168.93.173 () {38 vars in 666 bytes} [Wed Oct 31 15:44:18 2018] GET /index => generated 8303 bytes in 140 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 14/31] 192.168.93.173 () {36 vars in 611 bytes} [Wed Oct 31 15:44:18 2018] GET /static/css/reset.css => generated 94 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 15/32] 192.168.93.173 () {36 vars in 608 bytes} [Wed Oct 31 15:44:18 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70668|app: 0|req: 7/33] 192.168.93.173 () {36 vars in 616 bytes} [Wed Oct 31 15:44:18 2018] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 16/34] 192.168.93.173 () {36 vars in 592 bytes} [Wed Oct 31 15:44:18 2018] GET /static/js/slide.js => generated 92 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70668|app: 0|req: 8/35] 192.168.93.173 () {36 vars in 609 bytes} [Wed Oct 31 15:44:18 2018] GET /static/css/main.css => generated 93 bytes in 10 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70668|app: 0|req: 8/36] 192.168.93.173 () {36 vars in 636 bytes} [Wed Oct 31 15:44:18 2018] GET /static/images/logo.png => generated 96 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 8/37] 192.168.93.173 () {36 vars in 608 bytes} [Wed Oct 31 15:44:18 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 9/38] 192.168.93.173 () {36 vars in 600 bytes} [Wed Oct 31 15:44:18 2018] GET /static/js/slideshow.js => generated 96 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70669|app: 0|req: 6/39] 192.168.93.173 () {36 vars in 592 bytes} [Wed Oct 31 15:44:18 2018] GET /static/js/slide.js => generated 92 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 10/40] 192.168.93.173 () {36 vars in 600 bytes} [Wed Oct 31 15:44:18 2018] GET /static/js/slideshow.js => generated 96 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 11/41] 192.168.93.31 () {36 vars in 629 bytes} [Wed Oct 31 15:44:22 2018] GET / => generated 74 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 17/42] 192.168.93.33 () {36 vars in 622 bytes} [Wed Oct 31 15:44:27 2018] GET / => generated 74 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 18/43] 192.168.93.33 () {36 vars in 606 bytes} [Wed Oct 31 15:44:27 2018] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 19/44] 192.168.93.31 () {36 vars in 639 bytes} [Wed Oct 31 15:44:28 2018] GET /index => generated 8303 bytes in 75 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 20/45] 192.168.93.31 () {36 vars in 615 bytes} [Wed Oct 31 15:44:28 2018] GET /static/css/reset.css => generated 94 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70668|app: 0|req: 9/46] 192.168.93.31 () {36 vars in 613 bytes} [Wed Oct 31 15:44:28 2018] GET /static/css/main.css => generated 93 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70669|app: 0|req: 7/47] 192.168.93.31 () {36 vars in 620 bytes} [Wed Oct 31 15:44:28 2018] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 12/48] 192.168.93.31 () {36 vars in 612 bytes} [Wed Oct 31 15:44:28 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 21/50] 192.168.93.31 () {36 vars in 640 bytes} [Wed Oct 31 15:44:28 2018] GET /static/images/logo.png => generated 96 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 13/50] 192.168.93.31 () {36 vars in 596 bytes} [Wed Oct 31 15:44:28 2018] GET /static/js/slide.js => generated 92 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70668|app: 0|req: 10/51] 192.168.93.31 () {36 vars in 604 bytes} [Wed Oct 31 15:44:28 2018] GET /static/js/slideshow.js => generated 96 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 22/52] 192.168.93.169 () {36 vars in 609 bytes} [Wed Oct 31 15:44:30 2018] GET / => generated 74 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 23/53] 192.168.93.169 () {34 vars in 596 bytes} [Wed Oct 31 15:44:31 2018] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 24/54] 192.168.93.33 () {36 vars in 632 bytes} [Wed Oct 31 15:44:33 2018] GET /index => generated 8303 bytes in 56 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 25/55] 192.168.93.33 () {36 vars in 608 bytes} [Wed Oct 31 15:44:34 2018] GET /static/css/reset.css => generated 94 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 26/56] 192.168.93.33 () {36 vars in 606 bytes} [Wed Oct 31 15:44:34 2018] GET /static/css/main.css => generated 93 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 27/57] 192.168.93.33 () {36 vars in 613 bytes} [Wed Oct 31 15:44:34 2018] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 14/58] 192.168.93.33 () {36 vars in 605 bytes} [Wed Oct 31 15:44:34 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70668|app: 0|req: 11/59] 192.168.93.33 () {36 vars in 589 bytes} [Wed Oct 31 15:44:34 2018] GET /static/js/slide.js => generated 92 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 28/60] 192.168.93.33 () {36 vars in 633 bytes} [Wed Oct 31 15:44:34 2018] GET /static/images/logo.png => generated 96 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 29/61] 192.168.93.33 () {36 vars in 597 bytes} [Wed Oct 31 15:44:34 2018] GET /static/js/slideshow.js => generated 96 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 30/62] 192.168.93.70 () {36 vars in 617 bytes} [Wed Oct 31 15:44:35 2018] GET /index => generated 8303 bytes in 58 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 70669|app: 0|req: 8/63] 192.168.93.70 () {36 vars in 613 bytes} [Wed Oct 31 15:44:35 2018] GET /static/css/main.css => generated 93 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70668|app: 0|req: 12/64] 192.168.93.70 () {36 vars in 620 bytes} [Wed Oct 31 15:44:35 2018] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 31/65] 192.168.93.70 () {36 vars in 615 bytes} [Wed Oct 31 15:44:35 2018] GET /static/css/reset.css => generated 94 bytes in 13 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 16/66] 192.168.93.70 () {36 vars in 596 bytes} [Wed Oct 31 15:44:35 2018] GET /static/js/slide.js => generated 92 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 16/67] 192.168.93.70 () {36 vars in 612 bytes} [Wed Oct 31 15:44:35 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70669|app: 0|req: 9/68] 192.168.93.70 () {36 vars in 604 bytes} [Wed Oct 31 15:44:35 2018] GET /static/js/slideshow.js => generated 96 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 17/69] 192.168.93.70 () {36 vars in 604 bytes} [Wed Oct 31 15:44:35 2018] GET /static/images/logo.png => generated 96 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 32/70] 192.168.93.70 () {36 vars in 596 bytes} [Wed Oct 31 15:44:35 2018] GET /static/js/slide.js => generated 92 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 33/71] 192.168.93.70 () {36 vars in 604 bytes} [Wed Oct 31 15:44:35 2018] GET /static/images/logo.png => generated 96 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 18/72] 192.168.93.70 () {36 vars in 604 bytes} [Wed Oct 31 15:44:35 2018] GET /static/js/slideshow.js => generated 96 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 34/73] 192.168.93.70 () {34 vars in 594 bytes} [Wed Oct 31 15:44:36 2018] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 19/74] 192.168.93.169 () {36 vars in 619 bytes} [Wed Oct 31 15:44:38 2018] GET /index => generated 8303 bytes in 320 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 35/75] 192.168.93.169 () {36 vars in 617 bytes} [Wed Oct 31 15:44:38 2018] GET /static/css/reset.css => generated 94 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70669|app: 0|req: 10/76] 192.168.93.169 () {36 vars in 615 bytes} [Wed Oct 31 15:44:38 2018] GET /static/css/main.css => generated 93 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 36/77] 192.168.93.169 () {36 vars in 622 bytes} [Wed Oct 31 15:44:38 2018] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 20/78] 192.168.93.169 () {36 vars in 614 bytes} [Wed Oct 31 15:44:38 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70668|app: 0|req: 13/79] 192.168.93.169 () {36 vars in 598 bytes} [Wed Oct 31 15:44:38 2018] GET /static/js/slide.js => generated 92 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70668|app: 0|req: 14/80] 192.168.93.169 () {36 vars in 606 bytes} [Wed Oct 31 15:44:38 2018] GET /static/js/slideshow.js => generated 96 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 21/81] 192.168.93.169 () {36 vars in 606 bytes} [Wed Oct 31 15:44:38 2018] GET /static/images/logo.png => generated 96 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 37/82] 192.168.93.169 () {36 vars in 614 bytes} [Wed Oct 31 15:44:38 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 38/83] 192.168.93.169 () {36 vars in 598 bytes} [Wed Oct 31 15:44:38 2018] GET /static/js/slide.js => generated 92 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70668|app: 0|req: 15/84] 192.168.93.169 () {36 vars in 606 bytes} [Wed Oct 31 15:44:38 2018] GET /static/images/logo.png => generated 96 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70668|app: 0|req: 16/85] 192.168.93.169 () {36 vars in 606 bytes} [Wed Oct 31 15:44:38 2018] GET /static/js/slideshow.js => generated 96 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70669|app: 0|req: 11/86] 192.168.93.47 () {38 vars in 663 bytes} [Wed Oct 31 15:44:39 2018] GET /static/css/reset.css => generated 94 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 39/87] 192.168.93.47 () {38 vars in 661 bytes} [Wed Oct 31 15:44:39 2018] GET /static/css/main.css => generated 93 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 40/88] 192.168.93.169 () {34 vars in 596 bytes} [Wed Oct 31 15:44:40 2018] GET /favicon.ico => generated 85 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+False
+[pid: 70669|app: 0|req: 12/89] 192.168.93.31 () {36 vars in 650 bytes} [Wed Oct 31 15:44:46 2018] GET /user/login => generated 2118 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 42/90] 192.168.93.31 () {38 vars in 676 bytes} [Wed Oct 31 15:44:46 2018] GET /static/css/main.css => generated 93 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 42/91] 192.168.93.31 () {38 vars in 678 bytes} [Wed Oct 31 15:44:46 2018] GET /static/css/reset.css => generated 94 bytes in 7 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 22/92] 192.168.93.31 () {38 vars in 707 bytes} [Wed Oct 31 15:44:46 2018] GET /static/images/logo02.png => generated 98 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 43/93] 192.168.93.177 () {36 vars in 622 bytes} [Wed Oct 31 15:44:52 2018] GET / => generated 74 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 44/94] 192.168.93.177 () {36 vars in 606 bytes} [Wed Oct 31 15:44:55 2018] GET /favicon.ico => generated 85 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 45/95] 192.168.93.177 () {36 vars in 632 bytes} [Wed Oct 31 15:44:56 2018] GET /index => generated 8303 bytes in 39 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 46/96] 192.168.93.177 () {36 vars in 608 bytes} [Wed Oct 31 15:44:56 2018] GET /static/css/reset.css => generated 94 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70669|app: 0|req: 14/97] 192.168.93.177 () {36 vars in 613 bytes} [Wed Oct 31 15:44:56 2018] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70668|app: 0|req: 17/98] 192.168.93.177 () {36 vars in 605 bytes} [Wed Oct 31 15:44:56 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70669|app: 0|req: 15/99] 192.168.93.177 () {36 vars in 589 bytes} [Wed Oct 31 15:44:56 2018] GET /static/js/slide.js => generated 92 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70669|app: 0|req: 15/100] 192.168.93.177 () {36 vars in 606 bytes} [Wed Oct 31 15:44:56 2018] GET /static/css/main.css => generated 93 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70668|app: 0|req: 18/101] 192.168.93.177 () {36 vars in 633 bytes} [Wed Oct 31 15:44:56 2018] GET /static/images/logo.png => generated 96 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 23/102] 192.168.93.177 () {36 vars in 605 bytes} [Wed Oct 31 15:44:56 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70669|app: 0|req: 16/103] 192.168.93.177 () {36 vars in 597 bytes} [Wed Oct 31 15:44:56 2018] GET /static/js/slideshow.js => generated 96 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70668|app: 0|req: 19/104] 192.168.93.177 () {36 vars in 589 bytes} [Wed Oct 31 15:44:56 2018] GET /static/js/slide.js => generated 92 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 47/105] 192.168.93.177 () {36 vars in 597 bytes} [Wed Oct 31 15:44:56 2018] GET /static/js/slideshow.js => generated 96 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 24/106] 192.168.93.31 () {38 vars in 697 bytes} [Wed Oct 31 15:44:57 2018] GET /index => generated 8303 bytes in 210 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 25/107] 192.168.93.31 () {38 vars in 673 bytes} [Wed Oct 31 15:44:58 2018] GET /static/css/reset.css => generated 94 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70668|app: 0|req: 20/108] 192.168.93.31 () {38 vars in 671 bytes} [Wed Oct 31 15:44:58 2018] GET /static/css/main.css => generated 93 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70669|app: 0|req: 17/109] 192.168.93.31 () {38 vars in 678 bytes} [Wed Oct 31 15:44:58 2018] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 48/110] 192.168.93.31 () {38 vars in 670 bytes} [Wed Oct 31 15:44:58 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 49/111] 192.168.93.31 () {38 vars in 654 bytes} [Wed Oct 31 15:44:58 2018] GET /static/js/slide.js => generated 92 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70668|app: 0|req: 21/112] 192.168.93.31 () {38 vars in 698 bytes} [Wed Oct 31 15:44:58 2018] GET /static/images/logo.png => generated 96 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70668|app: 0|req: 22/113] 192.168.93.31 () {38 vars in 662 bytes} [Wed Oct 31 15:44:58 2018] GET /static/js/slideshow.js => generated 96 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70669|app: 0|req: 18/114] 192.168.93.31 () {38 vars in 662 bytes} [Wed Oct 31 15:44:58 2018] GET /static/js/slideshow.js => generated 96 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 26/115] 192.168.93.177 () {36 vars in 632 bytes} [Wed Oct 31 15:45:01 2018] GET /admin => generated 0 bytes in 2 msecs (HTTP/1.1 301) 3 headers in 148 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 27/116] 192.168.93.177 () {36 vars in 634 bytes} [Wed Oct 31 15:45:01 2018] GET /admin/ => generated 0 bytes in 163 msecs (HTTP/1.1 302) 7 headers in 281 bytes (1 switches on core 1)
+[pid: 70668|app: 0|req: 23/117] 192.168.93.177 () {36 vars in 671 bytes} [Wed Oct 31 15:45:01 2018] GET /admin/login/?next=/admin/ => generated 1917 bytes in 678 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 28/118] 192.168.93.177 () {38 vars in 695 bytes} [Wed Oct 31 15:45:02 2018] GET /static/admin/css/base.css => generated 99 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70669|app: 0|req: 19/119] 192.168.93.177 () {38 vars in 697 bytes} [Wed Oct 31 15:45:02 2018] GET /static/admin/css/login.css => generated 100 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 50/120] 192.168.93.77 () {36 vars in 632 bytes} [Wed Oct 31 15:45:12 2018] GET /index => generated 8303 bytes in 139 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 70669|app: 0|req: 20/121] 192.168.93.77 () {36 vars in 608 bytes} [Wed Oct 31 15:45:12 2018] GET /static/css/reset.css => generated 94 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70669|app: 0|req: 21/122] 192.168.93.77 () {36 vars in 606 bytes} [Wed Oct 31 15:45:12 2018] GET /static/css/main.css => generated 93 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70669|app: 0|req: 22/124] 192.168.93.77 () {36 vars in 613 bytes} [Wed Oct 31 15:45:12 2018] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 29/124] 192.168.93.77 () {36 vars in 605 bytes} [Wed Oct 31 15:45:12 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 30/125] 192.168.93.77 () {36 vars in 589 bytes} [Wed Oct 31 15:45:12 2018] GET /static/js/slide.js => generated 92 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 31/126] 192.168.93.77 () {36 vars in 605 bytes} [Wed Oct 31 15:45:12 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70668|app: 0|req: 24/127] 192.168.93.77 () {36 vars in 589 bytes} [Wed Oct 31 15:45:12 2018] GET /static/js/slide.js => generated 92 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70669|app: 0|req: 23/128] 192.168.93.77 () {36 vars in 597 bytes} [Wed Oct 31 15:45:12 2018] GET /static/js/slideshow.js => generated 96 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 51/129] 192.168.93.77 () {36 vars in 633 bytes} [Wed Oct 31 15:45:15 2018] GET /static/images/logo.png => generated 96 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 32/130] 192.168.93.77 () {36 vars in 611 bytes} [Wed Oct 31 15:45:15 2018] GET /favicon.ico => generated 85 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 33/131] 192.168.93.177 () {48 vars in 938 bytes} [Wed Oct 31 15:45:37 2018] POST /admin/login/?next=/admin/ => generated 0 bytes in 810 msecs (HTTP/1.1 302) 9 headers in 515 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 34/132] 192.168.93.177 () {42 vars in 834 bytes} [Wed Oct 31 15:45:37 2018] GET /admin/ => generated 12830 bytes in 722 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 1)
+[pid: 70668|app: 0|req: 25/133] 192.168.93.177 () {38 vars in 720 bytes} [Wed Oct 31 15:45:38 2018] GET /static/admin/css/base.css => generated 99 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 35/134] 192.168.93.177 () {38 vars in 730 bytes} [Wed Oct 31 15:45:38 2018] GET /static/admin/css/dashboard.css => generated 104 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 53/135] 192.168.93.196 () {38 vars in 679 bytes} [Wed Oct 31 15:45:46 2018] GET /index => generated 8303 bytes in 324 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 53/136] 192.168.93.177 () {40 vars in 814 bytes} [Wed Oct 31 15:45:45 2018] GET /admin/goods/goodssku/ => generated 5911 bytes in 1570 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 36/137] 192.168.93.177 () {38 vars in 735 bytes} [Wed Oct 31 15:45:46 2018] GET /static/admin/css/base.css => generated 99 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70669|app: 0|req: 24/138] 192.168.93.177 () {38 vars in 749 bytes} [Wed Oct 31 15:45:46 2018] GET /static/admin/css/changelists.css => generated 106 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70668|app: 0|req: 26/139] 192.168.93.177 () {38 vars in 716 bytes} [Wed Oct 31 15:45:47 2018] GET /static/admin/js/core.js => generated 97 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 38/140] 192.168.93.177 () {38 vars in 760 bytes} [Wed Oct 31 15:45:47 2018] GET /static/admin/js/admin/RelatedObjectLookups.js => generated 119 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70669|app: 0|req: 25/141] 192.168.93.177 () {38 vars in 728 bytes} [Wed Oct 31 15:45:47 2018] GET /static/admin/js/jquery.min.js => generated 103 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 54/142] 192.168.93.177 () {38 vars in 730 bytes} [Wed Oct 31 15:45:47 2018] GET /static/admin/js/jquery.init.js => generated 104 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70668|app: 0|req: 27/143] 192.168.93.177 () {38 vars in 730 bytes} [Wed Oct 31 15:45:47 2018] GET /static/admin/js/actions.min.js => generated 104 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 56/144] 192.168.93.196 () {38 vars in 652 bytes} [Wed Oct 31 15:45:47 2018] GET /static/css/main.css => generated 93 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 57/145] 192.168.93.196 () {38 vars in 659 bytes} [Wed Oct 31 15:45:47 2018] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70668|app: 0|req: 29/146] 192.168.93.196 () {38 vars in 635 bytes} [Wed Oct 31 15:45:47 2018] GET /static/js/slide.js => generated 92 bytes in 11 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70668|app: 0|req: 29/147] 192.168.93.196 () {38 vars in 679 bytes} [Wed Oct 31 15:45:47 2018] GET /static/images/logo.png => generated 96 bytes in 13 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 57/148] 192.168.93.196 () {38 vars in 654 bytes} [Wed Oct 31 15:45:47 2018] GET /static/css/reset.css => generated 94 bytes in 30 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 39/149] 192.168.93.196 () {38 vars in 651 bytes} [Wed Oct 31 15:45:47 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 26 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 39/150] 192.168.93.177 () {38 vars in 696 bytes} [Wed Oct 31 15:45:46 2018] GET /admin/jsi18n/ => generated 6776 bytes in 336 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 58/151] 192.168.93.177 () {38 vars in 716 bytes} [Wed Oct 31 15:45:47 2018] GET /static/admin/js/core.js => generated 97 bytes in 14 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70669|app: 0|req: 27/152] 192.168.93.196 () {38 vars in 644 bytes} [Wed Oct 31 15:45:47 2018] GET /static/js/slideshow.js => generated 96 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 40/153] 192.168.93.196 () {38 vars in 636 bytes} [Wed Oct 31 15:45:47 2018] GET /static/js/slide.js => generated 92 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70669|app: 0|req: 27/154] 192.168.93.177 () {38 vars in 760 bytes} [Wed Oct 31 15:45:47 2018] GET /static/admin/js/admin/RelatedObjectLookups.js => generated 119 bytes in 20 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 41/155] 192.168.93.177 () {38 vars in 728 bytes} [Wed Oct 31 15:45:47 2018] GET /static/admin/js/jquery.min.js => generated 103 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70669|app: 0|req: 28/156] 192.168.93.177 () {38 vars in 730 bytes} [Wed Oct 31 15:45:47 2018] GET /static/admin/js/jquery.init.js => generated 104 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70668|app: 0|req: 30/157] 192.168.93.177 () {38 vars in 730 bytes} [Wed Oct 31 15:45:47 2018] GET /static/admin/js/actions.min.js => generated 104 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70669|app: 0|req: 29/158] 192.168.93.196 () {38 vars in 644 bytes} [Wed Oct 31 15:45:47 2018] GET /static/js/slideshow.js => generated 96 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 59/159] 192.168.93.196 () {38 vars in 658 bytes} [Wed Oct 31 15:45:49 2018] GET /favicon.ico => generated 85 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70669|app: 0|req: 30/160] 192.168.93.147 () {36 vars in 616 bytes} [Wed Oct 31 15:45:52 2018] GET / => generated 74 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70669|app: 0|req: 31/161] 192.168.93.147 () {36 vars in 599 bytes} [Wed Oct 31 15:45:55 2018] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 60/162] 192.168.93.147 () {36 vars in 626 bytes} [Wed Oct 31 15:46:12 2018] GET /index => generated 8303 bytes in 65 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 70669|app: 0|req: 32/163] 192.168.93.147 () {36 vars in 602 bytes} [Wed Oct 31 15:46:13 2018] GET /static/css/reset.css => generated 94 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 61/164] 192.168.93.147 () {36 vars in 600 bytes} [Wed Oct 31 15:46:13 2018] GET /static/css/main.css => generated 93 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 62/165] 192.168.93.147 () {36 vars in 583 bytes} [Wed Oct 31 15:46:13 2018] GET /static/js/slide.js => generated 92 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70669|app: 0|req: 33/166] 192.168.93.147 () {36 vars in 599 bytes} [Wed Oct 31 15:46:13 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 7 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70668|app: 0|req: 31/167] 192.168.93.147 () {36 vars in 627 bytes} [Wed Oct 31 15:46:13 2018] GET /static/images/logo.png => generated 96 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 63/168] 192.168.93.147 () {36 vars in 607 bytes} [Wed Oct 31 15:46:13 2018] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 11 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 42/169] 192.168.93.147 () {36 vars in 599 bytes} [Wed Oct 31 15:46:13 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70669|app: 0|req: 35/170] 192.168.93.147 () {36 vars in 583 bytes} [Wed Oct 31 15:46:13 2018] GET /static/js/slide.js => generated 92 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70669|app: 0|req: 35/171] 192.168.93.147 () {36 vars in 591 bytes} [Wed Oct 31 15:46:13 2018] GET /static/js/slideshow.js => generated 96 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 43/172] 192.168.93.147 () {36 vars in 591 bytes} [Wed Oct 31 15:46:13 2018] GET /static/js/slideshow.js => generated 96 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+True
+[pid: 70670|app: 0|req: 44/173] 192.168.93.177 () {38 vars in 743 bytes} [Wed Oct 31 15:46:32 2018] GET /user/login => generated 0 bytes in 14 msecs (HTTP/1.1 302) 4 headers in 149 bytes (1 switches on core 1)
+4
+[pid: 70669|app: 0|req: 36/174] 192.168.93.177 () {38 vars in 733 bytes} [Wed Oct 31 15:46:32 2018] GET /index => generated 8279 bytes in 352 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 65/176] 192.168.93.177 () {38 vars in 706 bytes} [Wed Oct 31 15:46:32 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 45/176] 192.168.93.177 () {38 vars in 714 bytes} [Wed Oct 31 15:46:32 2018] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 65/177] 192.168.93.177 () {38 vars in 709 bytes} [Wed Oct 31 15:46:32 2018] GET /static/css/reset.css => generated 94 bytes in 7 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70669|app: 0|req: 37/178] 192.168.93.177 () {38 vars in 707 bytes} [Wed Oct 31 15:46:32 2018] GET /static/css/main.css => generated 93 bytes in 11 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70668|app: 0|req: 33/179] 192.168.93.177 () {38 vars in 734 bytes} [Wed Oct 31 15:46:32 2018] GET /static/images/logo.png => generated 96 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70668|app: 0|req: 33/180] 192.168.93.177 () {38 vars in 690 bytes} [Wed Oct 31 15:46:32 2018] GET /static/js/slide.js => generated 92 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 46/181] 192.168.93.177 () {38 vars in 706 bytes} [Wed Oct 31 15:46:32 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 67/182] 192.168.93.177 () {38 vars in 690 bytes} [Wed Oct 31 15:46:32 2018] GET /static/js/slide.js => generated 92 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 67/183] 192.168.93.177 () {38 vars in 698 bytes} [Wed Oct 31 15:46:32 2018] GET /static/js/slideshow.js => generated 96 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 47/184] 192.168.93.147 () {38 vars in 679 bytes} [Wed Oct 31 15:46:37 2018] GET /detail3 => generated 0 bytes in 3 msecs (HTTP/1.1 301) 3 headers in 150 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 68/185] 192.168.93.147 () {38 vars in 681 bytes} [Wed Oct 31 15:46:37 2018] GET /detail3/ => generated 7369 bytes in 212 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 49/186] 192.168.93.147 () {38 vars in 661 bytes} [Wed Oct 31 15:46:37 2018] GET /static/css/main.css => generated 93 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70668|app: 0|req: 34/187] 192.168.93.147 () {38 vars in 668 bytes} [Wed Oct 31 15:46:37 2018] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70669|app: 0|req: 38/188] 192.168.93.147 () {38 vars in 688 bytes} [Wed Oct 31 15:46:37 2018] GET /static/images/logo.png => generated 96 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 49/189] 192.168.93.147 () {38 vars in 663 bytes} [Wed Oct 31 15:46:37 2018] GET /static/css/reset.css => generated 94 bytes in 10 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70669|app: 0|req: 39/190] 192.168.93.147 () {38 vars in 686 bytes} [Wed Oct 31 15:46:37 2018] GET /detail3/foo.image.url => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 164 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 69/191] 192.168.93.147 () {38 vars in 688 bytes} [Wed Oct 31 15:46:37 2018] GET /detail3/foo.image.url/ => generated 0 bytes in 4 msecs (HTTP/1.1 302) 3 headers in 135 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 50/192] 192.168.93.147 () {38 vars in 654 bytes} [Wed Oct 31 15:46:37 2018] GET /index => generated 8303 bytes in 52 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+False
+[pid: 70673|app: 0|req: 70/193] 192.168.93.147 () {40 vars in 745 bytes} [Wed Oct 31 15:46:42 2018] GET /user/login => generated 2118 bytes in 11 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 51/194] 192.168.93.147 () {38 vars in 665 bytes} [Wed Oct 31 15:46:42 2018] GET /static/css/reset.css => generated 94 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70669|app: 0|req: 40/195] 192.168.93.147 () {38 vars in 663 bytes} [Wed Oct 31 15:46:42 2018] GET /static/css/main.css => generated 93 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 71/196] 192.168.93.147 () {38 vars in 694 bytes} [Wed Oct 31 15:46:42 2018] GET /static/images/logo02.png => generated 98 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 52/197] 192.168.93.177 () {38 vars in 741 bytes} [Wed Oct 31 15:46:43 2018] GET /user/info => generated 5728 bytes in 137 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 72/199] 192.168.93.177 () {38 vars in 711 bytes} [Wed Oct 31 15:46:43 2018] GET /static/css/main.css => generated 93 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70669|app: 0|req: 42/200] 192.168.93.177 () {38 vars in 738 bytes} [Wed Oct 31 15:46:43 2018] GET /static/images/logo.png => generated 96 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70669|app: 0|req: 41/199] 192.168.93.177 () {38 vars in 713 bytes} [Wed Oct 31 15:46:43 2018] GET /static/css/reset.css => generated 94 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+/index
+[pid: 70673|app: 0|req: 73/201] 192.168.93.147 () {48 vars in 889 bytes} [Wed Oct 31 15:46:54 2018] POST /user/login => generated 0 bytes in 353 msecs (HTTP/1.1 302) 7 headers in 486 bytes (1 switches on core 1)
+3
+[pid: 70673|app: 0|req: 74/202] 192.168.93.147 () {42 vars in 812 bytes} [Wed Oct 31 15:46:55 2018] GET /index => generated 8283 bytes in 205 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 70669|app: 0|req: 43/203] 192.168.93.147 () {38 vars in 709 bytes} [Wed Oct 31 15:46:55 2018] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 54/204] 192.168.93.147 () {38 vars in 701 bytes} [Wed Oct 31 15:46:55 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70668|app: 0|req: 36/205] 192.168.93.147 () {38 vars in 685 bytes} [Wed Oct 31 15:46:55 2018] GET /static/js/slide.js => generated 92 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70668|app: 0|req: 36/206] 192.168.93.147 () {38 vars in 702 bytes} [Wed Oct 31 15:46:55 2018] GET /static/css/main.css => generated 93 bytes in 16 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 55/207] 192.168.93.147 () {38 vars in 704 bytes} [Wed Oct 31 15:46:55 2018] GET /static/css/reset.css => generated 94 bytes in 22 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 55/208] 192.168.93.147 () {38 vars in 729 bytes} [Wed Oct 31 15:46:55 2018] GET /static/images/logo.png => generated 96 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70669|app: 0|req: 44/209] 192.168.93.147 () {38 vars in 701 bytes} [Wed Oct 31 15:46:55 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70669|app: 0|req: 45/210] 192.168.93.147 () {38 vars in 693 bytes} [Wed Oct 31 15:46:55 2018] GET /static/js/slideshow.js => generated 96 bytes in 20 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70668|app: 0|req: 37/211] 192.168.93.147 () {38 vars in 685 bytes} [Wed Oct 31 15:46:55 2018] GET /static/js/slide.js => generated 92 bytes in 19 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 56/212] 192.168.93.147 () {38 vars in 693 bytes} [Wed Oct 31 15:46:55 2018] GET /static/js/slideshow.js => generated 96 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+None
+[pid: 70673|app: 0|req: 75/213] 192.168.93.147 () {40 vars in 778 bytes} [Wed Oct 31 15:47:06 2018] GET /list2/ => generated 5441 bytes in 167 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 76/214] 192.168.93.147 () {38 vars in 703 bytes} [Wed Oct 31 15:47:06 2018] GET /static/css/main.css => generated 93 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70668|app: 0|req: 38/215] 192.168.93.147 () {38 vars in 705 bytes} [Wed Oct 31 15:47:06 2018] GET /static/css/reset.css => generated 94 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 57/216] 192.168.93.147 () {38 vars in 710 bytes} [Wed Oct 31 15:47:06 2018] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 58/217] 192.168.93.147 () {38 vars in 730 bytes} [Wed Oct 31 15:47:06 2018] GET /static/images/logo.png => generated 96 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+None
+[pid: 70673|app: 0|req: 77/218] 192.168.93.147 () {40 vars in 779 bytes} [Wed Oct 31 15:47:09 2018] GET /list8/ => generated 3995 bytes in 112 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 78/219] 192.168.93.147 () {38 vars in 705 bytes} [Wed Oct 31 15:47:09 2018] GET /static/css/reset.css => generated 94 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70668|app: 0|req: 39/220] 192.168.93.147 () {38 vars in 703 bytes} [Wed Oct 31 15:47:09 2018] GET /static/css/main.css => generated 93 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 59/221] 192.168.93.147 () {38 vars in 710 bytes} [Wed Oct 31 15:47:09 2018] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 60/222] 192.168.93.147 () {38 vars in 730 bytes} [Wed Oct 31 15:47:09 2018] GET /static/images/logo.png => generated 96 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 61/223] 192.168.93.33 () {36 vars in 622 bytes} [Wed Oct 31 15:50:27 2018] GET / => generated 74 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 79/224] 192.168.93.33 () {38 vars in 653 bytes} [Wed Oct 31 15:50:29 2018] GET / => generated 74 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+True
+[pid: 70673|app: 0|req: 80/225] 192.168.93.147 () {38 vars in 738 bytes} [Wed Oct 31 15:53:55 2018] GET /user/login => generated 0 bytes in 145 msecs (HTTP/1.1 302) 4 headers in 149 bytes (1 switches on core 0)
+3
+[pid: 70673|app: 0|req: 81/226] 192.168.93.147 () {38 vars in 728 bytes} [Wed Oct 31 15:53:58 2018] GET /index => generated 8283 bytes in 77 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 70668|app: 0|req: 41/227] 192.168.93.147 () {38 vars in 729 bytes} [Wed Oct 31 15:53:58 2018] GET /static/images/logo.png => generated 96 bytes in 15 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 63/228] 192.168.93.147 () {38 vars in 709 bytes} [Wed Oct 31 15:53:58 2018] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 21 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 63/229] 192.168.93.147 () {38 vars in 685 bytes} [Wed Oct 31 15:53:58 2018] GET /static/js/slide.js => generated 92 bytes in 25 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70668|app: 0|req: 41/230] 192.168.93.147 () {38 vars in 701 bytes} [Wed Oct 31 15:53:58 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 25 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 83/231] 192.168.93.147 () {38 vars in 702 bytes} [Wed Oct 31 15:53:58 2018] GET /static/css/main.css => generated 93 bytes in 30 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 83/232] 192.168.93.147 () {38 vars in 704 bytes} [Wed Oct 31 15:53:58 2018] GET /static/css/reset.css => generated 94 bytes in 34 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70669|app: 0|req: 46/233] 192.168.93.147 () {38 vars in 693 bytes} [Wed Oct 31 15:53:58 2018] GET /static/js/slideshow.js => generated 96 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 64/234] 192.168.93.147 () {38 vars in 685 bytes} [Wed Oct 31 15:53:58 2018] GET /static/js/slide.js => generated 92 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70668|app: 0|req: 42/235] 192.168.93.147 () {38 vars in 693 bytes} [Wed Oct 31 15:53:58 2018] GET /static/js/slideshow.js => generated 96 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 65/236] 192.168.93.147 () {40 vars in 788 bytes} [Wed Oct 31 15:54:02 2018] GET /user/logout => generated 0 bytes in 195 msecs (HTTP/1.1 302) 4 headers in 220 bytes (1 switches on core 1)
+[pid: 70669|app: 0|req: 47/237] 192.168.93.147 () {40 vars in 732 bytes} [Wed Oct 31 15:54:02 2018] GET /index => generated 8303 bytes in 106 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 66/238] 192.168.93.147 () {38 vars in 660 bytes} [Wed Oct 31 15:54:02 2018] GET /static/css/reset.css => generated 94 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 67/239] 192.168.93.147 () {38 vars in 665 bytes} [Wed Oct 31 15:54:02 2018] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70668|app: 0|req: 43/240] 192.168.93.147 () {38 vars in 657 bytes} [Wed Oct 31 15:54:02 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 85/241] 192.168.93.147 () {38 vars in 641 bytes} [Wed Oct 31 15:54:02 2018] GET /static/js/slide.js => generated 92 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 68/242] 192.168.93.147 () {38 vars in 685 bytes} [Wed Oct 31 15:54:02 2018] GET /static/images/logo.png => generated 96 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 85/243] 192.168.93.147 () {38 vars in 658 bytes} [Wed Oct 31 15:54:02 2018] GET /static/css/main.css => generated 93 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 86/244] 192.168.93.147 () {38 vars in 649 bytes} [Wed Oct 31 15:54:02 2018] GET /static/js/slideshow.js => generated 96 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 69/245] 192.168.93.147 () {38 vars in 657 bytes} [Wed Oct 31 15:54:02 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 87/246] 192.168.93.147 () {38 vars in 641 bytes} [Wed Oct 31 15:54:02 2018] GET /static/js/slide.js => generated 92 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 70/247] 192.168.93.147 () {38 vars in 649 bytes} [Wed Oct 31 15:54:02 2018] GET /static/js/slideshow.js => generated 96 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+False
+[pid: 70670|app: 0|req: 71/248] 192.168.93.147 () {38 vars in 693 bytes} [Wed Oct 31 15:54:11 2018] GET /user/login => generated 2118 bytes in 11 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 70668|app: 0|req: 44/249] 192.168.93.147 () {38 vars in 662 bytes} [Wed Oct 31 15:54:11 2018] GET /static/css/main.css => generated 93 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 88/251] 192.168.93.147 () {38 vars in 664 bytes} [Wed Oct 31 15:54:11 2018] GET /static/css/reset.css => generated 94 bytes in 13 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70669|app: 0|req: 48/250] 192.168.93.147 () {38 vars in 693 bytes} [Wed Oct 31 15:54:11 2018] GET /static/images/logo02.png => generated 98 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 72/252] 192.168.93.70 () {38 vars in 675 bytes} [Wed Oct 31 15:59:37 2018] GET /cart/cart/ => generated 0 bytes in 14 msecs (HTTP/1.1 302) 4 headers in 171 bytes (1 switches on core 1)
+False
+[pid: 70670|app: 0|req: 73/253] 192.168.93.70 () {38 vars in 708 bytes} [Wed Oct 31 15:59:37 2018] GET /user/login?next=/cart/cart/ => generated 2118 bytes in 13 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 90/254] 192.168.93.70 () {38 vars in 694 bytes} [Wed Oct 31 15:59:37 2018] GET /static/css/reset.css => generated 94 bytes in 11 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 74/255] 192.168.93.70 () {38 vars in 687 bytes} [Wed Oct 31 15:59:37 2018] GET /static/images/logo02.png => generated 98 bytes in 13 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 90/256] 192.168.93.70 () {38 vars in 692 bytes} [Wed Oct 31 15:59:37 2018] GET /static/css/main.css => generated 93 bytes in 15 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70668|app: 0|req: 45/257] 192.168.93.70 () {36 vars in 651 bytes} [Wed Oct 31 15:59:37 2018] GET /favicon.ico => generated 85 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 75/258] 192.168.93.70 () {38 vars in 674 bytes} [Wed Oct 31 15:59:39 2018] GET /index => generated 8303 bytes in 848 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 76/259] 192.168.93.70 () {38 vars in 669 bytes} [Wed Oct 31 15:59:40 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 92/260] 192.168.93.70 () {38 vars in 653 bytes} [Wed Oct 31 15:59:40 2018] GET /static/js/slide.js => generated 92 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70669|app: 0|req: 49/261] 192.168.93.70 () {38 vars in 659 bytes} [Wed Oct 31 15:59:40 2018] GET /static/images/logo.png => generated 96 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 92/262] 192.168.93.70 () {38 vars in 659 bytes} [Wed Oct 31 15:59:40 2018] GET /static/js/slideshow.js => generated 96 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+None
+[pid: 70669|app: 0|req: 50/263] 192.168.93.70 () {40 vars in 723 bytes} [Wed Oct 31 15:59:42 2018] GET /list4/ => generated 4015 bytes in 205 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 93/265] 192.168.93.70 () {38 vars in 670 bytes} [Wed Oct 31 15:59:42 2018] GET /static/css/main.css => generated 93 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 94/266] 192.168.93.70 () {38 vars in 677 bytes} [Wed Oct 31 15:59:42 2018] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70669|app: 0|req: 51/265] 192.168.93.70 () {38 vars in 672 bytes} [Wed Oct 31 15:59:42 2018] GET /static/css/reset.css => generated 94 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 77/267] 192.168.93.70 () {38 vars in 661 bytes} [Wed Oct 31 15:59:42 2018] GET /static/images/logo.png => generated 96 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 95/268] 192.168.93.70 () {36 vars in 650 bytes} [Wed Oct 31 15:59:42 2018] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+None
+[pid: 70670|app: 0|req: 78/269] 192.168.93.70 () {40 vars in 724 bytes} [Wed Oct 31 15:59:43 2018] GET /list8/ => generated 4015 bytes in 195 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 70668|app: 0|req: 47/270] 192.168.93.70 () {38 vars in 677 bytes} [Wed Oct 31 15:59:44 2018] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70669|app: 0|req: 52/271] 192.168.93.70 () {38 vars in 672 bytes} [Wed Oct 31 15:59:44 2018] GET /static/css/reset.css => generated 94 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70668|app: 0|req: 47/272] 192.168.93.70 () {38 vars in 670 bytes} [Wed Oct 31 15:59:44 2018] GET /static/css/main.css => generated 93 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70668|app: 0|req: 48/273] 192.168.93.70 () {38 vars in 661 bytes} [Wed Oct 31 15:59:44 2018] GET /static/images/logo.png => generated 96 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70669|app: 0|req: 53/274] 192.168.93.70 () {36 vars in 650 bytes} [Wed Oct 31 15:59:44 2018] GET /favicon.ico => generated 85 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+None
+[pid: 70668|app: 0|req: 49/275] 192.168.93.70 () {40 vars in 726 bytes} [Wed Oct 31 15:59:45 2018] GET /list13/ => generated 4625 bytes in 319 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 96/277] 192.168.93.70 () {38 vars in 671 bytes} [Wed Oct 31 15:59:45 2018] GET /static/css/main.css => generated 93 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70668|app: 0|req: 50/277] 192.168.93.70 () {38 vars in 673 bytes} [Wed Oct 31 15:59:45 2018] GET /static/css/reset.css => generated 94 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 97/278] 192.168.93.70 () {38 vars in 678 bytes} [Wed Oct 31 15:59:45 2018] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 79/279] 192.168.93.70 () {38 vars in 662 bytes} [Wed Oct 31 15:59:45 2018] GET /static/images/logo.png => generated 96 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 98/280] 192.168.93.70 () {36 vars in 650 bytes} [Wed Oct 31 15:59:45 2018] GET /favicon.ico => generated 85 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+None
+[pid: 70668|app: 0|req: 51/281] 192.168.93.70 () {40 vars in 727 bytes} [Wed Oct 31 15:59:45 2018] GET /list14/ => generated 4018 bytes in 35 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 70670|app: 0|req: 80/282] 192.168.93.70 () {38 vars in 673 bytes} [Wed Oct 31 15:59:45 2018] GET /static/css/reset.css => generated 94 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 100/283] 192.168.93.70 () {38 vars in 679 bytes} [Wed Oct 31 15:59:46 2018] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70673|app: 0|req: 100/284] 192.168.93.70 () {38 vars in 672 bytes} [Wed Oct 31 15:59:46 2018] GET /static/css/main.css => generated 93 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 70673|app: 0|req: 101/285] 192.168.93.70 () {38 vars in 663 bytes} [Wed Oct 31 15:59:46 2018] GET /static/images/logo.png => generated 96 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 70670|app: 0|req: 81/286] 192.168.93.70 () {36 vars in 651 bytes} [Wed Oct 31 15:59:46 2018] GET /favicon.ico => generated 85 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 70674)
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Oct 31 16:14:29 2018] ***
+compiled with version: 5.4.0 20160609 on 30 October 2018 16:49:55
+os: Linux-4.4.0-138-generic #164-Ubuntu SMP Tue Oct 2 17:16:02 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/sxt/Desktop/DEMO1/fresh_store
+writing pidfile to uwsgi.pid
+detected binary path: /home/sxt/.virtualenvs/dj/bin/uwsgi
+chdir() to /home/sxt/Desktop/DEMO1/fresh_store
+your processes number limit is 7764
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 3
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/sxt/.virtualenvs/dj
+Python main interpreter initialized at 0xebd380
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0xebd380 pid: 71223 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 71223)
+spawned uWSGI worker 1 (pid: 71228, cores: 2)
+spawned uWSGI worker 2 (pid: 71230, cores: 2)
+spawned uWSGI worker 3 (pid: 71232, cores: 2)
+spawned uWSGI worker 4 (pid: 71233, cores: 2)
+0
+[pid: 71232|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 782 bytes} [Wed Oct 31 16:14:39 2018] GET /index => generated 8283 bytes in 1670 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 71228|app: 0|req: 1/2] 127.0.0.1 () {40 vars in 706 bytes} [Wed Oct 31 16:14:40 2018] GET /static/js/slideshow.js => generated 96 bytes in 934 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+0
+[pid: 71228|app: 0|req: 2/3] 127.0.0.1 () {42 vars in 789 bytes} [Wed Oct 31 16:14:48 2018] GET /index => generated 8283 bytes in 509 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 71228|app: 0|req: 3/4] 127.0.0.1 () {40 vars in 706 bytes} [Wed Oct 31 16:14:49 2018] GET /static/js/slideshow.js => generated 96 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 71228|app: 0|req: 4/5] 127.0.0.1 () {40 vars in 706 bytes} [Wed Oct 31 16:14:49 2018] GET /static/js/slideshow.js => generated 96 bytes in 14 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 71228|app: 0|req: 5/6] 127.0.0.1 () {42 vars in 797 bytes} [Wed Oct 31 16:14:51 2018] GET /user/info => generated 4567 bytes in 115 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 71228|app: 0|req: 6/7] 127.0.0.1 () {42 vars in 805 bytes} [Wed Oct 31 16:14:54 2018] GET /user/order/ => generated 11254 bytes in 386 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 71228|app: 0|req: 7/8] 127.0.0.1 () {42 vars in 803 bytes} [Wed Oct 31 16:14:56 2018] GET /user/info => generated 4567 bytes in 147 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Oct 31 16:17:55 2018] ***
+compiled with version: 5.4.0 20160609 on 30 October 2018 16:49:55
+os: Linux-4.4.0-138-generic #164-Ubuntu SMP Tue Oct 2 17:16:02 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/sxt/Desktop/DEMO1/fresh_store
+writing pidfile to uwsgi.pid
+detected binary path: /home/sxt/.virtualenvs/dj/bin/uwsgi
+chdir() to /home/sxt/Desktop/DEMO1/fresh_store
+your processes number limit is 7764
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 3
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/sxt/.virtualenvs/dj
+Python main interpreter initialized at 0x224b380
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x224b380 pid: 71289 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 71289)
+spawned uWSGI worker 1 (pid: 71293, cores: 2)
+spawned uWSGI worker 2 (pid: 71295, cores: 2)
+spawned uWSGI worker 3 (pid: 71296, cores: 2)
+spawned uWSGI worker 4 (pid: 71298, cores: 2)
+0
+[pid: 71293|app: 0|req: 1/1] 127.0.0.1 () {40 vars in 751 bytes} [Wed Oct 31 16:18:19 2018] GET /index => generated 8283 bytes in 1511 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 71295|app: 0|req: 1/2] 127.0.0.1 () {40 vars in 706 bytes} [Wed Oct 31 16:18:21 2018] GET /static/js/slideshow.js => generated 96 bytes in 905 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 71298|app: 0|req: 1/3] 127.0.0.1 () {42 vars in 797 bytes} [Wed Oct 31 16:18:32 2018] GET /user/info => generated 4567 bytes in 1712 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 71295|app: 0|req: 2/4] 127.0.0.1 () {42 vars in 803 bytes} [Wed Oct 31 16:31:24 2018] GET /cart/cart/ => generated 7088 bytes in 804 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+0
+[pid: 71298|app: 0|req: 2/5] 127.0.0.1 () {42 vars in 794 bytes} [Wed Oct 31 16:31:28 2018] GET /index => generated 8283 bytes in 148 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+None
+[pid: 71298|app: 0|req: 3/6] 127.0.0.1 () {42 vars in 791 bytes} [Wed Oct 31 16:31:31 2018] GET /list2/ => generated 5441 bytes in 376 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Oct 31 16:37:21 2018] ***
+compiled with version: 5.4.0 20160609 on 30 October 2018 16:49:55
+os: Linux-4.4.0-138-generic #164-Ubuntu SMP Tue Oct 2 17:16:02 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/sxt/Desktop/DEMO1/fresh_store
+writing pidfile to uwsgi.pid
+detected binary path: /home/sxt/.virtualenvs/dj/bin/uwsgi
+chdir() to /home/sxt/Desktop/DEMO1/fresh_store
+your processes number limit is 7764
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:7777).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Oct 31 16:38:10 2018] ***
+compiled with version: 5.4.0 20160609 on 30 October 2018 16:49:55
+os: Linux-4.4.0-138-generic #164-Ubuntu SMP Tue Oct 2 17:16:02 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/sxt/Desktop/DEMO1/fresh_store
+writing pidfile to uwsgi.pid
+detected binary path: /home/sxt/.virtualenvs/dj/bin/uwsgi
+chdir() to /home/sxt/Desktop/DEMO1/fresh_store
+your processes number limit is 7764
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:7777).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Oct 31 16:40:33 2018] ***
+compiled with version: 5.4.0 20160609 on 30 October 2018 16:49:55
+os: Linux-4.4.0-138-generic #164-Ubuntu SMP Tue Oct 2 17:16:02 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/sxt/Desktop/DEMO1/fresh_store
+writing pidfile to uwsgi.pid
+detected binary path: /home/sxt/.virtualenvs/dj/bin/uwsgi
+chdir() to /home/sxt/Desktop/DEMO1/fresh_store
+your processes number limit is 7764
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:7777).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Oct 31 16:40:37 2018] ***
+compiled with version: 5.4.0 20160609 on 30 October 2018 16:49:55
+os: Linux-4.4.0-138-generic #164-Ubuntu SMP Tue Oct 2 17:16:02 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/sxt/Desktop/DEMO1/fresh_store
+writing pidfile to uwsgi.pid
+detected binary path: /home/sxt/.virtualenvs/dj/bin/uwsgi
+chdir() to /home/sxt/Desktop/DEMO1/fresh_store
+your processes number limit is 7764
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8080).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Oct 31 16:41:22 2018] ***
+compiled with version: 5.4.0 20160609 on 30 October 2018 16:49:55
+os: Linux-4.4.0-138-generic #164-Ubuntu SMP Tue Oct 2 17:16:02 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/sxt/Desktop/DEMO1/fresh_store
+writing pidfile to uwsgi.pid
+detected binary path: /home/sxt/.virtualenvs/dj/bin/uwsgi
+chdir() to /home/sxt/Desktop/DEMO1/fresh_store
+your processes number limit is 7764
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8080).
+bind(): Address already in use [core/socket.c line 769]
+None
+[pid: 71298|app: 0|req: 4/7] 127.0.0.1 () {42 vars in 784 bytes} [Wed Oct 31 16:42:02 2018] GET /list2/ => generated 5441 bytes in 659 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 71298|app: 0|req: 5/8] 127.0.0.1 () {42 vars in 798 bytes} [Wed Oct 31 16:42:04 2018] GET /user/info => generated 4567 bytes in 249 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 71298|app: 0|req: 6/9] 127.0.0.1 () {42 vars in 803 bytes} [Wed Oct 31 16:42:06 2018] GET /cart/cart/ => generated 7088 bytes in 51 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 71298|app: 0|req: 7/10] 127.0.0.1 () {42 vars in 804 bytes} [Wed Oct 31 16:42:07 2018] GET /user/order => generated 0 bytes in 4 msecs (HTTP/1.1 301) 3 headers in 143 bytes (1 switches on core 0)
+[pid: 71298|app: 0|req: 8/11] 127.0.0.1 () {42 vars in 806 bytes} [Wed Oct 31 16:42:07 2018] GET /user/order/ => generated 11254 bytes in 902 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+0
+[pid: 71298|app: 0|req: 9/12] 127.0.0.1 () {42 vars in 795 bytes} [Wed Oct 31 16:42:09 2018] GET /index => generated 8283 bytes in 120 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+None
+[pid: 71295|app: 0|req: 3/13] 127.0.0.1 () {42 vars in 791 bytes} [Wed Oct 31 16:42:11 2018] GET /list2/ => generated 5441 bytes in 725 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 71295|app: 0|req: 4/14] 127.0.0.1 () {42 vars in 794 bytes} [Wed Oct 31 16:42:14 2018] GET /detail3 => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 140 bytes (1 switches on core 1)
+[pid: 71295|app: 0|req: 5/15] 127.0.0.1 () {42 vars in 796 bytes} [Wed Oct 31 16:42:14 2018] GET /detail3/ => generated 7349 bytes in 751 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 71295|app: 0|req: 6/16] 127.0.0.1 () {40 vars in 743 bytes} [Wed Oct 31 16:42:15 2018] GET /detail3/foo.image.url => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 154 bytes (1 switches on core 0)
+[pid: 71293|app: 0|req: 2/17] 127.0.0.1 () {40 vars in 745 bytes} [Wed Oct 31 16:42:15 2018] GET /detail3/foo.image.url/ => generated 0 bytes in 23 msecs (HTTP/1.1 302) 3 headers in 125 bytes (1 switches on core 1)
+0
+[pid: 71293|app: 0|req: 3/18] 127.0.0.1 () {40 vars in 711 bytes} [Wed Oct 31 16:42:15 2018] GET /index => generated 8283 bytes in 419 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+None
+[pid: 71296|app: 0|req: 1/19] 127.0.0.1 () {42 vars in 791 bytes} [Wed Oct 31 16:42:12 2018] GET /list3/ => generated 3995 bytes in 4538 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+None
+[pid: 71296|app: 0|req: 2/20] 127.0.0.1 () {48 vars in 898 bytes} [Wed Oct 31 16:42:17 2018] POST /cart/add/ => generated 63 bytes in 118 msecs (HTTP/1.1 200) 3 headers in 94 bytes (1 switches on core 1)
+None
+[pid: 71293|app: 0|req: 4/21] 127.0.0.1 () {42 vars in 794 bytes} [Wed Oct 31 16:42:20 2018] GET /list3/ => generated 3995 bytes in 195 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+None
+[pid: 71298|app: 0|req: 10/22] 127.0.0.1 () {42 vars in 792 bytes} [Wed Oct 31 16:42:23 2018] GET /list3/ => generated 3995 bytes in 95 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+1
+[pid: 71298|app: 0|req: 11/23] 127.0.0.1 () {42 vars in 790 bytes} [Wed Oct 31 16:42:23 2018] GET /index => generated 8283 bytes in 174 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+1
+[pid: 71298|app: 0|req: 12/24] 127.0.0.1 () {42 vars in 789 bytes} [Wed Oct 31 16:45:55 2018] GET /index => generated 8283 bytes in 139 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 71298|app: 0|req: 13/25] 127.0.0.1 () {42 vars in 797 bytes} [Wed Oct 31 16:45:59 2018] GET /user/info => generated 4567 bytes in 361 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 71298|app: 0|req: 14/26] 127.0.0.1 () {42 vars in 799 bytes} [Wed Oct 31 16:46:01 2018] GET /detail3/ => generated 7349 bytes in 434 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 71295|app: 0|req: 7/27] 127.0.0.1 () {40 vars in 745 bytes} [Wed Oct 31 16:46:02 2018] GET /detail3/foo.image.url/ => generated 0 bytes in 68 msecs (HTTP/1.1 302) 3 headers in 125 bytes (1 switches on core 1)
+1
+[pid: 71298|app: 0|req: 15/28] 127.0.0.1 () {40 vars in 711 bytes} [Wed Oct 31 16:46:02 2018] GET /index => generated 8283 bytes in 165 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
